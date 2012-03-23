@@ -1,0 +1,6 @@
+[submodule "shaed-admin"]
+	path = shaed-admin
+	url = git@github.com:newsinternational/shaed-admin.git
+[submodule "shaed-router"]
+	path = shaed-router
+	url = git@github.com:newsinternational/shaed-router.git
