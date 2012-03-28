@@ -1,0 +1,47 @@
+# Introduction
+## What is it?
+
+Shaed is a web request proxy. Rather than proxying just at the HTTP level
+(though it does that too), it can manipulate requests and proxy them to
+other sites and services based on the input request.
+
+For example, say you wanted to use a third party API in a Javascript-based
+project and that API required a key in every request. To hide the key, you would
+normally have to construct a proxy for that particular project. This gets
+cumbersome if you have lots of projects. With Shaed you can set up a mapping
+between a Shaed URL and the third party API, and tell Shaed to automatically
+include the key parameter.
+
+## Screenshots
+
+A picture tells a thousand words.
+
+<ul class="thumbnails">
+  <li class="span3">
+    <a class="thumbnail" href="img/screenshots/admin.png"><img src="img/screenshots/admin.png" alt="Admin page" title="Admin panel" /></a>
+  </li>
+
+  <li class="span3">
+  </li>
+
+  <li class="span3">
+  </li>
+
+  <li class="span3">
+  </li>
+</ul>
+
+## Features
+
+ - Regex-based URL matching with the ability to interpolate match variables
+   into target URLs.
+ - Cache responses with a variable TTL.
+ - Unlimited 'mappings'.
+ - Merging of provided parameters with stored parameters (e.g. add an API key
+   transparently).
+
+Coming soon:
+
+ - JSONP wrapper.
+ - Header manipulation.
+ - [Your feature](http://github.com/newsinternational/shaed).
