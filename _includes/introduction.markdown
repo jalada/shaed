@@ -12,6 +12,13 @@ cumbersome if you have lots of projects. With Shaed you can set up a mapping
 between a Shaed URL and the third party API, and tell Shaed to automatically
 include the key parameter.
 
+Shaed has 2 main components:
+
+ - A **web-based administration panel** that allows you to log in and configure
+   mappings and routes.
+ - A **non-blocking request router** that performs the actual routing of
+   requests.
+
 ## Screenshots
 
 A picture tells a thousand words.
@@ -33,6 +40,7 @@ A picture tells a thousand words.
 
 ## Features
 
+ - Web-based administration with Google OpenID login.
  - Regex-based URL matching with the ability to interpolate match variables
    into target URLs.
  - Cache responses with a variable TTL.

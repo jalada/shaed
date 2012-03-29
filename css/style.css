@@ -1,3 +1,9 @@
 body {
   padding-top: 40px;
 }
+
+pre {
+  white-space: pre !important;
+  overflow-x: scroll;
+  word-wrap: normal;
+}
