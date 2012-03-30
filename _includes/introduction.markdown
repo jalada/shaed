@@ -25,17 +25,17 @@ A picture tells a thousand words.
 
 <ul class="thumbnails">
   <li class="span3">
-    <a class="thumbnail" href="img/screenshots/admin.png"><img src="img/screenshots/admin.png" alt="Admin page" title="Admin panel" /></a>
+    <a class="thumbnail" href="img/screenshots/login.png"><img src="img/screenshots/login.png" alt="Login page" title="Login page" /></a>
   </li>
 
   <li class="span3">
+    <a class="thumbnail" href="img/screenshots/mappings.png"><img src="img/screenshots/mappings.png" alt="List of mappings" title="List of mappings" /></a>
   </li>
 
   <li class="span3">
+    <a class="thumbnail" href="img/screenshots/edit.png"><img src="img/screenshots/edit.png" alt="Editing a mapping" title="Editing a mapping" /></a>
   </li>
 
-  <li class="span3">
-  </li>
 </ul>
 
 ## Features
