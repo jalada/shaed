@@ -58,6 +58,11 @@ the same or close to the versions listed above. In addition you will also
 need [foreman](https://github.com/ddollar/foreman) which you can install by
 running `gem install foreman`.
 
+**In short**: `shaed-admin` is a Ruby app; set it up and run it with `foreman
+start`. `shaed-router` is a Node app; set it up and also run it with `foreman
+start`. The router depends on admin infrastructure, so ensure that is running
+first.
+
 ### Shaed Admin
 
 From the `shaed/` folder:

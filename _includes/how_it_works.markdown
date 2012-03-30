@@ -1,5 +1,0 @@
-# How it works
-
-## Architecture
-
-
