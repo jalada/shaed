@@ -189,7 +189,10 @@ You're ready to go!
 
 ## Deploying to Heroku
 
-Install the [Heroku toolbelt](https://toolbelt.heroku.com/) for your platform.
+If you have never deployed to Heroku, output from some commands may differ
+slightly from what is here. Also, be sure to install the [Heroku
+toolbelt](https://toolbelt.heroku.com/) for your platform (otherwise `heroku` 
+commands won't work).
 
 ### Shaed Admin
 
@@ -244,7 +247,19 @@ You should now be able to visit
 you won't be able to log in because you need to seed the database with some
 initial admin users.
 
-TODO
+To do this, add a configuration variable to the Heroku app called
+`ADMIN_EMAILS` with a comma-separated list of email addresses and then run the
+'seed' rake task within Heroku:
+
+    $ heroku config:add ADMIN_EMAILS=jalada@newsint.co.uk,peter.macrobert@newsint.co.uk
+    Adding config vars and restarting app... done, v5
+      ADMIN_EMAILS => jalada@newsint.c...rt@newsint.co.uk
+    $ heroku run padrino rake seed
+    => Executing Rake seed ...
+    <snip>
+    $  
+
+You're done! Now you can log in to the admin panel.
 
 ### Shaed Router
 
@@ -270,7 +285,8 @@ the `MONGOHQ_URL` variable you noted down when setting it up:
 
     $ heroku config:add MONGOHQ_URL=mongodb://heroku:aecaf9edf9eac9@staff.mongohq.com:10066/app1231512
     Adding config vars and restarting app... done, v3
-    MONGOHQ_URL => mongodb://heroku...10066/app1231512
+      MONGOHQ_URL => mongodb://heroku...10066/app1231512
+    $
 
 Now push the code to Heroku.
 
