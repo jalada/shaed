@@ -21,7 +21,7 @@ Shaed has 2 main components:
 
 ## Screenshots
 
-A picture tells a thousand words.
+A picture is worth a thousand words.
 
 <ul class="thumbnails">
   <li class="span3">
