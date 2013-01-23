@@ -216,14 +216,14 @@ used Heroku before you will be prompted for your credentials.
     Git remote heroku added
     $ 
 
-Add a MongoHQ addon. This is the free tier so it won't cost you any money. Note
+Add a MongoHQ addon. This is the sandbox tier so it won't cost you any money. Note
 down the `MONGOHQ_URL` environment variable because you will need to add it to
 the router app later.
 
-    $ heroku addons:add mongohq:free
-    ----> Adding mongohq:free to my-shaed-admin... done, v2 (free)
+    $ heroku addons:add mongohq:sandbox
+    ----> Adding mongohq:sandbox to my-shaed-admin... done, v2 (free)
     $ heroku config
-    MONGOHQ_URL => mongodb://heroku:aecaf9edf9eac9@staff.mongohq.com:10066/app1231512
+    MONGOHQ_URL => mongodb://heroku:aecaf9edf9eac9@linus.mongohq.com:10066/app1231512
     $ 
 
 Now push the app to Heroku to deploy it:
@@ -288,7 +288,7 @@ requests use a pay tier).
 Configure the router to use the same MongoDB instance as the admin app using
 the `MONGOHQ_URL` variable you noted down when setting it up:
 
-    $ heroku config:add MONGOHQ_URL=mongodb://heroku:aecaf9edf9eac9@staff.mongohq.com:10066/app1231512
+    $ heroku config:add MONGOHQ_URL=mongodb://heroku:aecaf9edf9eac9@linus.mongohq.com:10066/app1231512
     Adding config vars and restarting app... done, v3
       MONGOHQ_URL => mongodb://heroku...10066/app1231512
     $
